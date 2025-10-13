@@ -12,11 +12,12 @@ namespace ZooPal
         static void Main(string[] args)
         {
 
-           animal myAnimal = new animal("Leo", 5, 190.5, true, DateTime.Now.AddHours(-3), "Savannah");
+           animal myAnimal = new animal("Leo", "Lion", 5, 190.5, true, DateTime.Now.AddHours(-3), "Savannah");
 
 
 
             Console.WriteLine(myAnimal.displayInfo());
+            Console.WriteLine(myAnimal);
 
 
 

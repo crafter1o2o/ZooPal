@@ -10,7 +10,7 @@ namespace ZooPal
     {
         // This is a mock of the Higharchy
         private string animalName;
-        pirvate string species;
+        private string species;
         private int animalAge;
         private double animalWeight;
         private bool isHealthy;
