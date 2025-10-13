@@ -9,31 +9,28 @@ namespace ZooPal
     public class animal
     {
         // This is a mock of the Higharchy
-        String animalName;
-        int animalAge;
-        double animalWeight;
-        bool isHealthy;
-        DateTime LastFed;
-        String habitatType;
+        private string animalName;
+        pirvate string species;
+        private int animalAge;
+        private double animalWeight;
+        private bool isHealthy;
+        private DateTime LastFed;
+        private string habitatType;
 
-        public animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
+        public animal(String name, String species, int age, double weight, bool healthy, DateTime lastFed, String habitat)
         {
             this.animalName = name;
-            animalAge = age;
-            animalWeight = weight;
-            isHealthy = healthy;
-            LastFed = lastFed;
-            habitatType = habitat;
+            this.species = species;
+            this.animalAge = age;
+            this.animalWeight = weight;
+            this.isHealthy = healthy;
+            this.LastFed = lastFed;
+            this.habitatType = habitat;
         }
 
-        void displayInfo()
+        public string displayInfo()
         {
-            Console.WriteLine("Name: " + animalName);
-            Console.WriteLine("Age: " + animalAge);
-            Console.WriteLine("Weight: " + animalWeight);
-            Console.WriteLine("Healthy: " + isHealthy);
-            Console.WriteLine("Last Fed: " + LastFed);
-            Console.WriteLine("Habitat Type: " + habitatType);
+            return $"Name: {animalName}, Species: {species}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}";
         }
     }
 }
