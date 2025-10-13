@@ -8,17 +8,19 @@ namespace ZooPal
 {
     internal class Program
     {
+
+
+
+
+
+
+
+
+
         static void Main(string[] args)
         {
 
-            // This is a mock of the Higharchy
-            String animalName;
-            int animalAge;
-            double animalWeight;
-            bool isHealthy;
-            DateTime LastFed;
-            String habitatType;
-
+           
 
 
 
