@@ -8,7 +8,7 @@ namespace ZooPal
 {
     public class animal
     {
-        // This is a mock of the Higharchy
+        // This is a mock of the Hierarchy
         private string animalName;
         private string species;
         private int animalAge;
