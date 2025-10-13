@@ -10,8 +10,11 @@ namespace ZooPal
     {
 
         //display animals
+        Console.WriteLine(myAnimal);
         //display habitats
+        Console.WriteLine(myHabitats);
         //feed all animals
+
         //perform health checks
         //add new animal
         //Generate Daily Report
