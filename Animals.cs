@@ -19,11 +19,11 @@ namespace ZooPal
         public animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
         {
             this.animalName = name;
-            animalAge = age;
-            animalWeight = weight;
-            isHealthy = healthy;
-            LastFed = lastFed;
-            habitatType = habitat;
+            this.animalAge = age;
+            this.animalWeight = weight;
+            this.isHealthy = healthy;
+            this.LastFed = lastFed;
+            this.habitatType = habitat;
         }
 
         void displayInfo()
