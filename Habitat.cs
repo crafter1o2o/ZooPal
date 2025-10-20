@@ -20,7 +20,8 @@ namespace ZooPal
 
 
 
-            public habitat(String biome, int capacity, double tempture, double size, bool isClean){
+            public habitat(String biome, int capacity, double tempture, double size, bool isClean)
+            {
                 this.biome = biome;
                 this.capacity = capacity;
                 this.temperature = tempture;
@@ -31,7 +32,7 @@ namespace ZooPal
 
             public string displayInfo()
             {
-                return $"Name: {animalName}, Species: {species}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}";
+                return $"Biome: {biome}, Capacity: {capacity}, Temperature: {temperature}C, Size: {size}sqm, Clean: {isClean}, Animals Count: {animalsInHabitat.Count}";
             }
         }
     }
