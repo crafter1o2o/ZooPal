@@ -71,7 +71,6 @@ namespace ZooPal
                         //Display Habitats
                         Console.WriteLine(savannahHabitat.displayInfo());
                         //Currently, no animals being made are being adding animals to habitat, fix that somehow, figuture it out soon.
-
                         break;
                     case "3":
                         //Feed All Animals
@@ -89,10 +88,10 @@ namespace ZooPal
                         //Emergency Evacuation Drill
                         break;
                     case "8":
+                        ///GOD DAMNIT! This stupid POS won't read this for some reason.
                         //Exit
-                        
-                        
-                        Goodbye.displayGoodbye();
+                        Console.Clear();
+                        Console.WriteLine("Exiting the program. Goodbye!");
                         isRunning == false;
                         Enviroment.Exit(0);
 
