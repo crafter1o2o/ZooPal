@@ -18,6 +18,10 @@ namespace ZooPal
         {
             
 
+
+
+        static void Main(string[] args)
+        {
             //List for the ALL animals
             List<String> listAnimals = new List<String>();
 
@@ -109,25 +113,37 @@ namespace ZooPal
                 }
             }
         }
+
+
+        public void InitializePreserve()
+        {
+
+        }
+
+        public void RunMainMenu()
+        {
+
+        }
+
+        public void DisplayMenu()
+        {
+
+        }
+
+        public void AddNewAnimal()
+        {
+
+        }
+
+        public void DemonstratePolymorphism()
+        {
+
+        }
+
+        public void ProcessAnimalPolymorphically(someAnimal Animal)
+        {
+
+        }
+
     }
 }
-
-          
-            //display animals
-           
-           
-
-
-
-            //display habitats
-
-            //feed all animals
-
-            //perform health checks
-            //add new animal
-
-            //Generate Daily Report
-            //Demonstrate Polymorphism
-            //Emergency Evactuation Drill
-            //Exit
-
