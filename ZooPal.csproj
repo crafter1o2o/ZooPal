@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animals.cs" />
+    <Compile Include="Aquarium.cs" />
+    <Compile Include="Aviary.cs" />
     <Compile Include="Goodbye.cs" />
     <Compile Include="Habitat.cs" />
     <Compile Include="Preserve.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Savanna.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>
   <ItemGroup>
