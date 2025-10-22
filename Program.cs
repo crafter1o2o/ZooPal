@@ -109,25 +109,50 @@ namespace ZooPal
                 }
             }
         }
+
+        public void AddAnimal(animal Animal)
+        {
+
+        }
+
+        public void AddHabitat(habitat Habitat)
+        {
+
+        }
+
+        public void FeedAllAnimals()
+        {
+
+        }
+
+        public void PerformHealthChecks()
+        {
+
+        }
+
+        public void DisplayAllAnimals()
+        {
+
+        }
+
+        public void DisplayAllHabitats()
+        {
+
+        }
+
+
+        public void GenerateDailyReport()
+        {
+
+        }
+
+        public void EmergencyEvacuation()
+        {
+
+        }
     }
 }
 
           
-            //display animals
-           
-           
-
-
-
-            //display habitats
-
-            //feed all animals
-
-            //perform health checks
-            //add new animal
-
-            //Generate Daily Report
-            //Demonstrate Polymorphism
-            //Emergency Evactuation Drill
-            //Exit
+          
 
