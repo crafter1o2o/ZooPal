@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using static ZooPal.Habitat;
 
 namespace ZooPal
 {
@@ -17,33 +15,33 @@ namespace ZooPal
         DateTime ClosingTime;
         bool isRecentlyFed;
 
-        public string Name;
-        public List<Animal> Animals;
-        public List<Habitat> Habitat;
-        public DateTime OpeningTime;
-        public DateTime ClosingTime;
 
-        public Preserve(string name)
-        {
-            this.Name = name;
-        }
 
-        public void AddAnimal(animal Animal)
+        public Preserve(String name)
         {
+            this.name = name;
+            return;
 
         }
 
-        public void AddHabitat(habitat Habitat)
+
+        public void AddAnimal(animal animal)
         {
 
         }
 
-        public void FeedAllAnimals()
+        public void AddHabitat(Habitat habitat)
         {
-            
+
         }
 
-        public void PerformHealthChecks()
+
+        public void feedAllAnimals()
+        {
+            isRecentlyFed = true;
+        }
+
+        public void PerfoemHealthCheck()
         {
 
         }
@@ -68,9 +66,6 @@ namespace ZooPal
         {
 
         }
-
-
-
 
 
 
