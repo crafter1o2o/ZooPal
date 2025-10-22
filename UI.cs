@@ -21,8 +21,9 @@ namespace ZooPal
             Console.WriteLine("4. Perform Health Checks");
             Console.WriteLine("5. Add New Animal");
             Console.WriteLine("6. Generate Daily Report");
-            Console.WriteLine("7. Emergency Evacuation Drill");
-            Console.WriteLine("8. Exit");
+            Console.WriteLine("7. Demostrate Polymorphism");
+            Console.WriteLine("8. Emergency Evacuation Drill");
+            Console.WriteLine("9. Exit");
             Console.WriteLine("-------------------------");
 
 

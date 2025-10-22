@@ -10,9 +10,13 @@ namespace ZooPal
 {
     internal class Program
     {
+
+        
+
+
         static void Main(string[] args)
         {
-
+            
 
             //List for the ALL animals
             List<String> listAnimals = new List<String>();
@@ -44,12 +48,12 @@ namespace ZooPal
 
 
 
-            if (isRunning == true)
+            while (isRunning == true)
             {
                 //Makes the menu display
                 UI.DisplayMenu();
 
-                Console.Write("Please select an option (1-8): ");
+                Console.Write("Please select an option (1-9): ");
                 userInput = Console.ReadLine();
                 userInput1 = userInput;
                 ///YES I KNOW IT'S REPEATIVE! BUT THIS IS WORKING!!! -PCB
@@ -88,17 +92,20 @@ namespace ZooPal
                         //Emergency Evacuation Drill
                         break;
                     case "8":
+
+                        break;
+                    case "9":
                         ///GOD DAMNIT! This stupid POS won't read this for some reason.
+                        ///10-22 FIXED IT!!! WOOOOOO!!! Also I did just change the case for this cause I finally realized I didn't make the Main Menu Properly-PCB
                         //Exit
                         Console.Clear();
                         Console.WriteLine("Exiting the program. Goodbye!");
-                        isRunning == false;
-                        Enviroment.Exit(0);
-
+                        isRunning = false;
                         break;
                     default:
                         Console.WriteLine("Invalid input, please try again.");
                         break;
+
                 }
             }
         }
