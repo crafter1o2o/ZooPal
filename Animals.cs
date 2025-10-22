@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace ZooPal
 {
-    public class animal
+    public abstract class animal
     {
         // This is a mock of the Hierarchy
         private string animalName;
-        private string species;
         private int animalAge;
         private double animalWeight;
         private bool isHealthy;
         private DateTime LastFed;
         private string habitatType;
 
-        public animal(String name, String species, int age, double weight, bool healthy, DateTime lastFed, String habitat)
+        public animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
         {
             this.animalName = name;
-            this.species = species;
             this.animalAge = age;
             this.animalWeight = weight;
             this.isHealthy = healthy;
@@ -28,7 +26,32 @@ namespace ZooPal
             this.habitatType = habitat;
         }
 
-        public string displayInfo()
+        public string MakeSound()
+        {
+
+        }
+        
+        public string GetDietType()
+        {
+
+        }
+
+        public double GetFoodAmount()
+        {
+
+        }
+
+        public void Feed()
+        {
+
+        }
+        
+        public void PerformHealthCheck()
+        {
+
+        }
+
+        public void displayInfo()
         {
             return $"Name: {animalName}, Species: {species}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}";
         }
