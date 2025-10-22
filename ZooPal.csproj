@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animals.cs" />
+    <Compile Include="Bear.cs" />
     <Compile Include="Goodbye.cs" />
     <Compile Include="Habitat.cs" />
-    <Compile Include="PreserveOutput.cs" />
+    <Compile Include="mamnal.cs" />
+    <Compile Include="Preserve.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI.cs" />
