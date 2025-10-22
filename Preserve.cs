@@ -10,6 +10,12 @@ namespace ZooPal
 {
     internal class Preserve
     {
+        String name;
+        List<String> animals;
+        List<String> habitats;
+        DateTime OpeningTime;
+        DateTime ClosingTime;
+        bool isRecentlyFed;
 
         public string Name;
         public List<Animal> Animals;
@@ -29,7 +35,7 @@ namespace ZooPal
 
         public void AddHabitat(habitat Habitat)
         {
-            
+
         }
 
         public void FeedAllAnimals()
@@ -51,6 +57,7 @@ namespace ZooPal
         {
 
         }
+
 
         public void GenerateDailyReport()
         {
