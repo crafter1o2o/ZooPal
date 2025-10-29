@@ -22,7 +22,7 @@ namespace ZooPal
             this.hasUnderwaterViewingArea = hasUnderwaterViewingArea;
         }
     
-        public bool CanAccomidate (Animal animal)
+        public bool CanAccommodate (Animal animal)
         {
             return true;
         }

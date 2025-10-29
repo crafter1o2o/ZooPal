@@ -5,22 +5,34 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ZooPal
-{.
+{
     internal class Aviary
     {
-        public class Aviary : Habitat
+        public class Aviary : Animal
         {
-            public double FightHeight;
-            public int Perchcount;
+            public double FlightHeight;
+            public int PerchCount;
             public bool HasNettingRoof;
-        }
 
-        public Aviary(String biome, int capacity, double temperature, double size, bool isClean, double flightHeight, int perchCount, bool hasNettingRoof)
-            : base(biome, capacity, temperature, size, isClean)
-        {
-            this.FightHeight = flightHeight;
-            this.Perchcount = perchCount;
-            this.HasNettingRoof = hasNettingRoof;
+            public bool CanAccommodate(Animal animal)
+            {
+
+            }
+            public class AddAnimal
+            {
+
+            }
+
+            public void DisplayInfo()
+            {
+
+            }
+
+            public void PerformMaintenance()
+            {
+
+            }
+
         }
     }
 }

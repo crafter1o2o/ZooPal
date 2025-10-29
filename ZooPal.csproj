@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animals\Animal.cs" />
-    <Compile Include="Animals\Bear.cs" />
+    <Compile Include="Animals\Lion.cs" />
     <Compile Include="Animals\mamnal.cs" />
     <Compile Include="Goodbye.cs" />
     <Compile Include="Habitat\Aquarium.cs" />

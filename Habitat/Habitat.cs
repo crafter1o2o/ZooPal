@@ -11,12 +11,12 @@ namespace ZooPal
         public class habitat 
         {
             // This is a mock of the Hierarchy
-            private string biome;
-            private int capacity;
-            private double temperature;
-            private double size;
-            private bool isClean;
-            private List<animal> animalsInHabitat;
+            public string biome;
+            public int capacity;
+            public double temperature;
+            public double size;
+            public bool isClean;
+            public List<animal> animalsInHabitat;
 
 
 
