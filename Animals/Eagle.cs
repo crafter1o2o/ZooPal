@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace ZooPal.Animals
 {
-
-    public int PrideSize;
-    public bool IsAlpha;
-
-
-    internal class Lion
+    internal class Eagle
     {
+        public double DiveSpeed;
+        public double VisualAcuity;
 
-
-        public Lion(String name, int age, double weight, int prideSize, bool isAlpha)
+        public Eagle(String name, int age, double weight, double wingSpan, double diveSpeed)
         {
 
         }
@@ -39,6 +35,7 @@ namespace ZooPal.Animals
         {
 
         }
+
         public void DisplayInfo()
         {
 
