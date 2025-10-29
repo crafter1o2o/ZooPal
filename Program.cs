@@ -47,6 +47,13 @@ namespace ZooPal
             string userInput1;
 
 
+            String userStrimg1 = "DefaultName";
+            String userString2 = "DefaultSpecies";
+            int userInt1 = 0;
+            double userDouble1 = 0.0;
+            bool userBoolean1 = true;
+
+
 
             while (isRunning == true)
             {
@@ -73,28 +80,44 @@ namespace ZooPal
                         break;
                     case "2":
                         //Display Habitats
+
+                        Console.Clear();
                         Console.WriteLine(savannahHabitat.displayInfo());
                         //Currently, no animals being made are being adding animals to habitat, fix that somehow, figuture it out soon.
                         break;
                     case "3":
+
+                        Console.Clear();
                         //Feed All Animals
                         break;
                     case "4":
+
+                        Console.Clear();
                         //Perform Health Checks
                         break;
+
                     case "5":
+
+                        Console.Clear();
                         //Add New Animal
                         break;
                     case "6":
+
+                        Console.Clear();
                         //Generate Daily Report
                         break;
                     case "7":
+
+                        Console.Clear();
                         //Emergency Evacuation Drill
                         break;
                     case "8":
 
+                        Console.Clear();
+
                         break;
                     case "9":
+
                         ///GOD DAMNIT! This stupid POS won't read this for some reason.
                         ///10-22 FIXED IT!!! WOOOOOO!!! Also I did just change the case for this cause I finally realized I didn't make the Main Menu Properly-PCB
                         //Exit

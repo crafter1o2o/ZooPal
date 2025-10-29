@@ -11,8 +11,8 @@ namespace ZooPal
         int gestationDays;
 
         public Mamnal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat, bool isSocial, int gestationDays)
-        { 
-
+        {
+            base(name ,age, weight, healthy, lastFed, habitat, name);
             this.isSocial = isSocial;
             this.gestationDays = gestationDays;
 
