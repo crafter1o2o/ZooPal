@@ -15,5 +15,31 @@ namespace ZooPal.Animals
     {
     }
     
-    public Lion(name)
-}
+    public Lion(String name, int age, double weight, int prideSize, bool isAlpha)
+        {
+
+        }
+       
+    public string MakeSound()
+        {
+
+        }
+
+    public string GetDietType()
+        {
+
+        }
+
+    public double GetFoodAmount()
+        {
+
+        }
+
+    public void Feed()
+        {
+
+        }
+    public void DisplayInfo()
+        {
+
+        }
