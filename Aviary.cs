@@ -10,18 +10,16 @@ namespace ZooPal
     {
         public class Aviary : animal
         {
-            public double FightHeight;
-            public int Perchcount;
+            public double FlightHeight;
+            public int PerchCount;
             public bool HasNettingRoof;
 
-
-
-
-
-            private class AddAnimal
+            private bool CanAccommodate(Animal animal)
             {
 
-
+            }
+            private class AddAnimal
+            {
 
             }
 
@@ -30,13 +28,10 @@ namespace ZooPal
 
             }
 
-
-            private void PerformMatanence()
+            private void PerformMaintenance()
             {
 
             }
-
-
 
         }
         }
