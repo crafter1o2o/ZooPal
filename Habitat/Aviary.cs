@@ -1,15 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZooPal
+{
+    internal class Aviary : Habitat
+    {
+        public double FlightHeight { get; set; }
+        public int PerchCount { get; set; }
+        public bool HasNettingRoof { get; set; }
+
+        public Aviary(string biome, int capacity, double temperature, double size, bool isClean,
+                      double flightHeight, int perchCount, bool hasNettingRoof)
+            : base(biome, capacity, temperature, size, isClean)
 {
     internal class Aviary
     {
         public class Aviary : Animal
         {
+            FlightHeight = flightHeight;
+            PerchCount = perchCount;
+            HasNettingRoof = hasNettingRoof;
+        }
             public double FlightHeight;
             public int PerchCount;
             public bool HasNettingRoof;
@@ -23,16 +34,9 @@ namespace ZooPal
 
             }
 
-            public void DisplayInfo()
-            {
-
-            }
-
-            public void PerformMaintenance()
-            {
-
-            }
-
+        public string DisplayAviaryInfo()
+        {
+            return $"{DisplayInfo()}, Flight Height: {FlightHeight}m, Perch Count: {PerchCount}, Netting Roof: {HasNettingRoof}";
         }
     }
 }
