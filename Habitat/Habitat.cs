@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ZooPal
 {
-    internal class Habitat
+    internal class Habitat 
     {
-        public class habitat
+        public class habitat 
         {
             // This is a mock of the Hierarchy
             private string biome;
@@ -35,5 +35,19 @@ namespace ZooPal
                 return $"Biome: {biome}, Capacity: {capacity}, Temperature: {temperature}C, Size: {size}sqm, Clean: {isClean}, Animals Count: {animalsInHabitat.Count}";
             }
         }
+    
+    
+        public void AddAnimalToHabitat(animal animalToAdd)
+        {
+            // Logic to add animal to habitat
+            AddAnimalToHabitat(animalToAdd);
+        }
+
+
+
+
+
+
     }
+
 }

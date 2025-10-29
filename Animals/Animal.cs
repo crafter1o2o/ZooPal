@@ -8,7 +8,7 @@ namespace ZooPal
 {
     class Animal
     {
-        // This is a mock of the Hierarchy
+        //All the Varaibles needed for the Animal class
         private String animalName;
         private int animalAge;
         private double animalWeight;
@@ -16,6 +16,7 @@ namespace ZooPal
         private DateTime LastFed;
         private string habitatType;
 
+        //Constructor for the Animal class
         public Animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
         {
             this.animalName = name;
@@ -25,7 +26,7 @@ namespace ZooPal
             this.LastFed = lastFed;
             this.habitatType = habitat;
         }
-
+        //Method to display the info of the Animal
         public void displayInfo()
         {
              Console.WriteLine($"Name: {animalName}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}");
