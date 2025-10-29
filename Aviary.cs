@@ -6,33 +6,33 @@ using System.Threading.Tasks;
 
 namespace ZooPal
 {
-    internal class Aviary
+    internal class Aviary 
     {
-        public class Aviary : Animal
+        public class Aviary : animal
         {
             public double FlightHeight;
             public int PerchCount;
             public bool HasNettingRoof;
 
-            public bool CanAccommodate(Animal animal)
+            private bool CanAccommodate(Animal animal)
             {
 
             }
-            public class AddAnimal
-            {
-
-            }
-
-            public void DisplayInfo()
+            private class AddAnimal
             {
 
             }
 
-            public void PerformMaintenance()
+            private void DisplayInfo()
+            {
+
+            }
+
+            private void PerformMaintenance()
             {
 
             }
 
         }
+        }
     }
-}

@@ -8,13 +8,13 @@ namespace ZooPal
 {
     class Animal
     {
-        //All the Varaibles needed for the Animal class
-        private String animalName;
-        private int animalAge;
-        private double animalWeight;
-        private bool isHealthy;
-        private DateTime LastFed;
-        private string habitatType;
+        //All the Variables needed for the Animal class
+        public String animalName;
+        public int animalAge;
+        public double animalWeight;
+        public bool isHealthy;
+        public DateTime LastFed;
+        public string habitatType;
 
         //Constructor for the Animal class
         public Animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
