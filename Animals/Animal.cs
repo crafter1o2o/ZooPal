@@ -1,35 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZooPal
 {
-    class Animal
+    internal class Animal
     {
-        //All the Varaibles needed for the Animal class
-        private String animalName;
-        private int animalAge;
-        private double animalWeight;
-        private bool isHealthy;
-        private DateTime LastFed;
-        private string habitatType;
+        // Backing fields for properties to avoid ambiguity
+        public readonly string _name;
+        public readonly int _age;
+        public readonly double _weight;
+        public bool _isHealthy;
+        public DateTime _lastFed;
+        public readonly string _habitatType;
 
-        //Constructor for the Animal class
-        public Animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
+        // Properties for the Animal class
+        public string Name => _name;
+        public int Age => _age;
+        public double Weight => _weight;
+        // To fix CS0101, ensure only one definition of 'Animal' exists in the 'ZooPal' namespace.
+        // If you have another 'Animal' class in the same namespace (possibly in another file), you must remove or rename one of them.
+        // If this file is the intended definition, delete or rename the duplicate 'Animal' class elsewhere in your project.
+        // No code changes are needed in this file unless you want to rename this class.
+
+        //
+        // If you need help locating the duplicate, search your project for "class Animal" in the 'ZooPal' namespace.
+        //
+        public bool IsHealthy => _isHealthy;
+        public DateTime LastFed => _lastFed;
+        public string HabitatType => _habitatType;
+
+        // Constructor
+        public Animal(string name, int age, double weight, bool isHealthy, DateTime lastFed, string habitatType)
         {
-            this.animalName = name;
-            this.animalAge = age;
-            this.animalWeight = weight;
-            this.isHealthy = healthy;
-            this.LastFed = lastFed;
-            this.habitatType = habitat;
+            _name = name;
+            _age = age;
+            _weight = weight;
+            _isHealthy = isHealthy;
+            _lastFed = lastFed;
+            _habitatType = habitatType;
         }
-        //Method to display the info of the Animal
-        public void displayInfo()
+
+        // Method to display the animal's information
+        public void DisplayInfo()
         {
-             Console.WriteLine($"Name: {animalName}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}");
+            Console.WriteLine(
+                $"Name: {_name}, Age: {_age}, Weight: {_weight} kg, Healthy: {_isHealthy}, Last Fed: {_lastFed:g}, Habitat: {_habitatType}"
+            );
+        }
+
+        // Optional: helper methods
+        public void Feed()
+        {
+            _lastFed = DateTime.Now;
+            Console.WriteLine($"{_name} has been fed.");
+        }
+
+        public void UpdateHealth(bool healthStatus)
+        {
+            _isHealthy = healthStatus;
+            Console.WriteLine($"{_name}'s health status updated to: {_isHealthy}");
         }
     }
 }

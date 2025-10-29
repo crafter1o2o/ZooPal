@@ -1,26 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZooPal
-{.
-    internal class Aviary
+{
+    internal class Aviary : Habitat
     {
-        public class Aviary : Habitat
-        {
-            public double FightHeight;
-            public int Perchcount;
-            public bool HasNettingRoof;
-        }
+        public double FlightHeight { get; set; }
+        public int PerchCount { get; set; }
+        public bool HasNettingRoof { get; set; }
 
-        public Aviary(String biome, int capacity, double temperature, double size, bool isClean, double flightHeight, int perchCount, bool hasNettingRoof)
+        public Aviary(string biome, int capacity, double temperature, double size, bool isClean,
+                      double flightHeight, int perchCount, bool hasNettingRoof)
             : base(biome, capacity, temperature, size, isClean)
         {
-            this.FightHeight = flightHeight;
-            this.Perchcount = perchCount;
-            this.HasNettingRoof = hasNettingRoof;
+            FlightHeight = flightHeight;
+            PerchCount = perchCount;
+            HasNettingRoof = hasNettingRoof;
+        }
+
+        public string DisplayAviaryInfo()
+        {
+            return $"{DisplayInfo()}, Flight Height: {FlightHeight}m, Perch Count: {PerchCount}, Netting Roof: {HasNettingRoof}";
         }
     }
 }
