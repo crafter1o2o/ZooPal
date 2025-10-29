@@ -16,9 +16,30 @@ namespace ZooPal
 
     public Aquarium(String biome, int capacity, double temperature, double size, bool isClean, double waterVolume, double waterSalinity, bool hasUnderwaterViewingArea)
         : base(biome, capacity, temperature, size, isClean)
-    {
-        this.waterVolume = waterVolume;
-        this.waterSalinity = waterSalinity;
-        this.hasUnderwaterViewingArea = hasUnderwaterViewingArea;
+        {
+            this.waterVolume = waterVolume;
+            this.waterSalinity = waterSalinity;
+            this.hasUnderwaterViewingArea = hasUnderwaterViewingArea;
         }
-    }
+    
+        public bool CanAccomidate (Animal animal)
+        {
+            return true;
+        }
+
+        public void AddAnimal(Animal animal)
+        {
+
+        }
+
+        public void DisplayInfo()
+        {
+
+        }
+
+        public void PerformMaintainence()
+        {
+
+        }
+
+}
