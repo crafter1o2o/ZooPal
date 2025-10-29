@@ -46,6 +46,15 @@ namespace ZooPal
                 $"Name: {_name}, Age: {_age}, Weight: {_weight} kg, Healthy: {_isHealthy}, Last Fed: {_lastFed:g}, Habitat: {_habitatType}"
             );
         }
+    class Animal
+    {
+        //All the Variables needed for the Animal class
+        public String animalName;
+        public int animalAge;
+        public double animalWeight;
+        public bool isHealthy;
+        public DateTime LastFed;
+        public string habitatType;
 
         // Optional: helper methods
         public void Feed()
