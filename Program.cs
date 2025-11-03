@@ -10,13 +10,13 @@ namespace ZooPal
 {
     internal class Program
     {
-        
-        
+
+
 
 
         static void Main(string[] args)
         {
-            
+
 
             //List for the ALL animals
             List<String> listAnimals = new List<String>();
@@ -24,13 +24,13 @@ namespace ZooPal
 
 
             //Create the Animal of choice
-            animal lion1 = new animal("Leo", "lion", 5, 190.5, true, DateTime.Now.AddHours(-3), "Savannah");
-
-
+            Animal lion1 = new Animals.Lion("Leo", 15, 129, true, "Savanaha", true, 100, 3);
+            listAnimals.Add(lion1.displayInfo());
+            Console.WriteLine(lion1.displayInfo());
 
             //Add the animal to the list
             ///I Unfortunately don't know how to automatically add animals to habitats yet, so for now it's manual. -PCB
-            listAnimals.Add(lion1.displayInfo());
+
 
 
 
@@ -133,49 +133,21 @@ namespace ZooPal
             }
         }
 
-        public void AddAnimal(animal Animal)
-        {
-
-        }
-
-        public void AddHabitat(habitat Habitat)
-        {
-
-        }
-
-        public void FeedAllAnimals()
-        {
-
-        }
-
-        public void PerformHealthChecks()
-        {
-
-        }
-
-        public void DisplayAllAnimals()
-        {
-
-        }
-
-        public void DisplayAllHabitats()
-        {
-
-        }
 
 
-        public void GenerateDailyReport()
-        {
 
-        }
 
-        public void EmergencyEvacuation()
-        {
 
-        }
+
+
+
+
+
+        //FUCK YOU TWO LITTLE SHITS!!!
+        //These are a pita
     }
 }
 
-          
-          
+
+
 

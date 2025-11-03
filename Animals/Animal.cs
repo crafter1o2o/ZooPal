@@ -17,19 +17,21 @@ namespace ZooPal
         public string habitatType;
 
         //Constructor for the Animal class
-        public Animal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat)
+        public Animal(String name, int age, double weight, bool healthy,  String habitat)
         {
             this.animalName = name;
             this.animalAge = age;
             this.animalWeight = weight;
             this.isHealthy = healthy;
-            this.LastFed = lastFed;
             this.habitatType = habitat;
         }
         //Method to display the info of the Animal
-        public void displayInfo()
+        public string displayInfo()
         {
-             Console.WriteLine($"Name: {animalName}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Last Fed: {LastFed}, Habitat: {habitatType}");
+            String info ="Name: {animalName}, Age: {animalAge}, Weight: {animalWeight}kg, Healthy: {isHealthy}, Habitat: {habitatType}";
+
+            return info;
+        
         }
     }
 }
