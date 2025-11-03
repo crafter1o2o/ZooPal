@@ -36,7 +36,7 @@ namespace ZooPal
 
             //Create Habitats
             ///I will be figuring out how to add animals to habitats automatically later. For now, it's manual. -PCB
-            habitat savannahHabitat = new Habitat.habitat("Savannah", 10, 30.0, 5000.0, true);
+            Habitat savannahHabitat = new Savanna("Savannah", 10, 30.0, 5000.0, true);
 
             //To Stop The Program, Make this bish false
             bool isRunning = true;
@@ -46,15 +46,14 @@ namespace ZooPal
             String userInput;
             string userInput1;
 
-
+/*
             String userStrimg1 = "DefaultName";
             String userString2 = "DefaultSpecies";
             int userInt1 = 0;
             double userDouble1 = 0.0;
             bool userBoolean1 = true;
 
-
-
+*/
             while (isRunning == true)
             {
                 //Makes the menu display
@@ -133,6 +132,23 @@ namespace ZooPal
             }
         }
 
+        public void AddAnimal(Animal Animal)
+        {
+
+        }
+
+        public void AddHabitat(Habitat Habitat)
+        {
+
+        }
+
+        public void FeedAllAnimals()
+        {
+
+        }
+
+        public void PerformHealthChecks()
+        {
 
 
 
