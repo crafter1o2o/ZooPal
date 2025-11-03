@@ -1,47 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ZooPal.Animals
 {
 
-    public int PrideSize;
-    public bool IsAlpha;
 
 
-    internal class Lion
+
+    internal class Lion : Mammal
     {
+        public int prideSize;
 
 
-        public Lion(String name, int age, double weight, int prideSize, bool isAlpha)
+        private string v1;
+        private int v2;
+        private double v3;
+        private bool v4;
+        private DateTime dateTime;
+        private string v6;
+
+        public Lion(string name, int age, double weight, bool healthy, String habitat, bool isSocial, int gestationDays,int prideSize)
+        : base(name, age, weight, healthy, habitat, isSocial, gestationDays)
         {
-
-        }
-
-        public string MakeSound()
-        {
-
-        }
-
-        public string GetDietType()
-        {
-
-        }
-
-        public double GetFoodAmount()
-        {
-
-        }
-
-        public void Feed()
-        {
-
-        }
-        public void DisplayInfo()
-        {
-
+            this.prideSize = prideSize;
         }
     }
 }
