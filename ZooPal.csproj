@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\OneDrive\Desktop\ZooPals Backup.cs" />
     <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Eagle.cs" />
+    <Compile Include="Animals\Elephant.cs" />
     <Compile Include="Animals\Lion.cs" />
+    <Compile Include="Animals\Mammal.cs" />
+    <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Mammal.cs" />
     <Compile Include="Animals\Reptile.cs" />
     <Compile Include="Animals\Penguin.cs" />
